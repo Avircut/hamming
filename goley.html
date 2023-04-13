@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Goley</title>
+  </head>
+  <body>
+    <div id="app">
+      <h2>Код Голея</h2>
+      <p>Исходный текст для шифрования - 12 бит. Результат - 24 бита</p>
+      <button id="random">Генерировать случайный код</button>  
+      <label for="source">Исходный код</label>
+      <textarea id="source" rows="2" cols="70">1111</textarea>
+      <label for="result">Зашифрованный код</label>
+      <textarea id="result" rows="2" cols="70"></textarea>
+      <label for="corrupted">Зашифрованный код</label>
+      <textarea id="corrupted" rows="2" cols="70"></textarea>
+      <label for="restored">Восстановленный код</label>
+      <textarea id="restored" rows="2" cols="70"></textarea>
+      <p>Количество ошибок: <span id="corruptedBits"></span></p>
+      <p id="message"></p>
+      <button id="encode">Зашифровать</button>  
+      <button id="corrupt">Исказить код</button>  
+      <button id="decode">Расшифровать</button>  
+      <a href="index.html">Код Хемминга</a>
+    </div>
+    <script type="module" src="/goley.js"></script>
+  </body>
+</html>
