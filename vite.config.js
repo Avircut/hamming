@@ -10,16 +10,16 @@ export default defineConfig({
       build: {
         rollupOptions: {
           input: {
-            arith: fileURLToPath(new URL('goley.html', import.meta.url)),
-            accordion: fileURLToPath(
+            goley: fileURLToPath(new URL('goley.html', import.meta.url)),
+            hamming: fileURLToPath(
              new URL('index.html', import.meta.url) // typo here: componentes
             ),
           },
         },
       },
      input: {
-        arith: fileURLToPath(new URL('goley.html', import.meta.url)),
-       accordion: fileURLToPath(
+        goley: fileURLToPath(new URL('goley.html', import.meta.url)),
+       hamming: fileURLToPath(
           new URL('index.html', import.meta.url),
         ),
       },
