@@ -1,6 +1,7 @@
 import './style.css'
 import $ from 'jquery';
-import hammingCode from 'hamming-code';
+import hammingCode from './hamming';
+
 
 $('#encode').on('click',() => {
   $('#result').val(hammingCode.encode($('#source').val()));  

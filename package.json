@@ -12,7 +12,6 @@
     "vite": "^4.2.0"
   },
   "dependencies": {
-    "hamming-code": "^0.0.2",
     "jquery": "^3.6.4"
   }
 }
